@@ -1,0 +1,24 @@
+[project]
+name = "finlake"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Anurag Bhattacharya", email = "bhattacharya.anurag9135@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=2.0.0",
+    "pandas>=3.1.0",
+    "pyarrow>=26.0.0",
+    "pyspark>=4.2.0",
+    "pytest>=9.1.1",
+    "ruff>=0.17.2",
+]
+
+[project.scripts]
+finlake = "finlake:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
